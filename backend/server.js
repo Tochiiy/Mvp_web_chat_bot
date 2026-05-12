@@ -30,7 +30,7 @@ if (!OPENAI_API_KEY) {
 //  Middleware
 app.use(
   cors({
-    origin: "https://mvp-web-chat-bot-1.onrender.com/",
+    origin: "https://mvp-web-chat-bot-1.onrender.com",
   }),
 );
 app.use(express.json());
