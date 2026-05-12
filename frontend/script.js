@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
-  const API_URL =
-    window.location.hostname === "localhost"
-      ? "http://localhost:3000/api/chat"
-      : "https://your-render-app-name.onrender.com/api/chat";
+const API_URL = window.location.hostname === "localhost"
+  ? "http://localhost:3000/api/chat"
+  : "https://mvp-web-chat-bot.onrender.com/api/chat";
 
   async function getLLMResponse(message) {
     try {
